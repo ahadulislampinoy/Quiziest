@@ -14,13 +14,6 @@ Hosted in Netlify -> [linkedin](https://www.linkedin.com/)
 - Responsive
 
 
-## Tech Stack
-
-- React
-- React Router
-- TailwindCSS
-
-
 ## Resources & Credits
 
 - Different Tailwind Components
@@ -28,3 +21,9 @@ Hosted in Netlify -> [linkedin](https://www.linkedin.com/)
  - [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
  - [Recharts](https://recharts.org/en-US/)
 
+
+## Tech Stack
+
+- React
+- React Router
+- TailwindCSS
