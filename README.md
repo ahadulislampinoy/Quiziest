@@ -3,8 +3,8 @@
 A Programming quiz site, where you can test your JavaScript, React, CSS, and Git skills.
 
 ## Live Link
-Hosted in Netlify -> [linkedin](https://www.linkedin.com/)
 
+Hosted in Netlify -> [Quiziest](https://quiziest.netlify.app/)
 
 ## Features
 
@@ -13,14 +13,12 @@ Hosted in Netlify -> [linkedin](https://www.linkedin.com/)
 - Easy navigation
 - Responsive
 
-
 ## Resources & Credits
 
 - Different Tailwind Components
- - [Heroicons](https://heroicons.com/)
- - [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
- - [Recharts](https://recharts.org/en-US/)
-
+- [Heroicons](https://heroicons.com/)
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [Recharts](https://recharts.org/en-US/)
 
 ## Tech Stack
 
