@@ -1,16 +1,31 @@
-import React from "react";
+import { EyeIcon } from "@heroicons/react/24/solid";
+import React, { useState } from "react";
+
 import QuizOptions from "../QuizOptions/QuizOptions";
 
 const Quiz = ({ quiz }) => {
-  const { question, options } = quiz;
+  const [answer, setAnswer] = useState([]);
+  const { question, options, correctAnswer } = quiz;
+  console.log(answer);
   return (
     <div>
       <section className="mt-16 flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl md:flex-row">
         {/* left part (question) started */}
-        <div className="md:flex md:items-center md:justify-center md:w-1/2 bg-gradient-to-l from-gray-900 to-indigo-700 ">
+        <div className="md:flex md:items-center md:justify-center md:w-1/2 bg-gradient-to-l from-gray-900 to-indigo-700 relative">
+          <button onClick={() => setAnswer(correctAnswer)}>
+            <EyeIcon className="h-6 w-6 text-white absolute top-4 left-4" />
+          </button>
+
           <div className="px-6 py-6 md:px-8 md:py-0">
             <p className="mt-2 text-xl font-medium text-white leading-10">
               {question.split("<p>")[1].split("</p>")[0]}
+            </p>
+            <p
+              className={`mt-2 ${
+                answer.length === 0 ? "hidden" : "block"
+              } text-xl font-medium text-cyan-500 border ring-2 ring-indigo-500 ring-offset-2 px-2 leading-10`}
+            >
+              Answer: {`${answer}`}
             </p>
           </div>
         </div>
@@ -21,7 +36,11 @@ const Quiz = ({ quiz }) => {
           <form>
             <div className="overflow-hidden rounded-lg grid grid-cols-1 gap-4">
               {options.map((option, index) => (
-                <QuizOptions key={index} option={option} />
+                <QuizOptions
+                  key={index}
+                  option={option}
+                  correctAnswer={correctAnswer}
+                />
               ))}
             </div>
           </form>
