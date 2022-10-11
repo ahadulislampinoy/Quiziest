@@ -6,7 +6,6 @@ import QuizOptions from "../QuizOptions/QuizOptions";
 const Quiz = ({ quiz }) => {
   const [answer, setAnswer] = useState([]);
   const { question, options, correctAnswer } = quiz;
-  console.log(answer);
   return (
     <div>
       <section className="mt-16 flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl md:flex-row">

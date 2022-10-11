@@ -5,10 +5,10 @@ const Blog = () => {
     <div>
       <section className=" text-gray-800">
         <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <h2 className="mb-6 mt-10 md:mt-0 text-4xl font-bold leading-none text-center sm:text-5xl">
+          <h2 className="mb-6 mt-4 lg:mt-8 text-4xl font-bold leading-none text-center sm:text-5xl">
             Most Asked Interview Questions
           </h2>
-          <p className="mb-24 text-lg font-medium tracking-wider text-center capitalize">
+          <p className="mb-14 md:mb-24 text-lg font-medium tracking-wider text-center capitalize">
             Read and prepare yourself for upcoming Interviews👨‍💻
           </p>
           <div className="grid gap-10 md:gap-8 sm:p-3 lg:px-12 xl:px-32">
