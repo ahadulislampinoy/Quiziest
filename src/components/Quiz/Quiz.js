@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import QuizOptions from "../QuizOptions/QuizOptions";
 
-const Quiz = ({ quiz }) => {
+const Quiz = ({ quiz, index }) => {
   const [answer, setAnswer] = useState([]);
   const { question, options, correctAnswer } = quiz;
   return (
@@ -14,10 +14,14 @@ const Quiz = ({ quiz }) => {
           <button onClick={() => setAnswer(correctAnswer)}>
             <EyeIcon className="h-6 w-6 text-white absolute top-4 left-4" />
           </button>
+          <span className="text-white text-xl font-medium absolute top-4 right-4">
+            {index}
+          </span>
 
-          <div className="px-6 py-6 md:px-8 md:py-0">
+          {/* <div className="px-6 py-6 md:px-8 md:py-7"> */}
+          <div className="p-6 sm:p-8">
             <p className="mt-2 text-xl font-medium text-white leading-10">
-              {question.split("<p>")[1].split("</p>")[0]}
+              {question.replace(/(<([^>]+)>)/gi, " ")}
             </p>
             <p
               className={`mt-2 ${

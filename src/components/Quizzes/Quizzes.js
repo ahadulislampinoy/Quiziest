@@ -17,8 +17,8 @@ const Quizzes = () => {
         </div>
       </div>
       <div className="pb-16 sm:mx-12 mx-6">
-        {questions.map((quiz) => (
-          <Quiz key={quiz.id} quiz={quiz} />
+        {questions.map((quiz, index) => (
+          <Quiz key={quiz.id} quiz={quiz} index={index} />
         ))}
       </div>
     </div>
