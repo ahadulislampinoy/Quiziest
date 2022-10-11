@@ -23,7 +23,7 @@ const Quiz = ({ quiz }) => {
             <p
               className={`mt-2 ${
                 answer.length === 0 ? "hidden" : "block"
-              } text-xl font-medium text-cyan-500 border ring-2 ring-indigo-500 ring-offset-2 px-2 leading-10`}
+              } text-xl font-medium bg-gradient-to-t from-gray-900 to-indigo-700 text-white border rounded ring-2 ring-indigo-500 ring-offset-2 px-2 leading-10`}
             >
               Answer: {`${answer}`}
             </p>
