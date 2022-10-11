@@ -15,7 +15,7 @@ const Quiz = ({ quiz, index }) => {
             <EyeIcon className="h-6 w-6 text-white absolute top-4 left-4" />
           </button>
           <span className="text-white text-xl font-medium absolute top-4 right-4">
-            {index}
+            {index + 1}
           </span>
 
           {/* <div className="px-6 py-6 md:px-8 md:py-7"> */}
