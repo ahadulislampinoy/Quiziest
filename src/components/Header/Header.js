@@ -66,11 +66,14 @@ const Header = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-xl">
               <li className="font-medium	text-gray-600  hover:text-indigo-700">
                 <NavLink
-                  to="/topics"
+                  to="/home"
                   onClick={({ isActive }) => (isActive ? "active" : undefined)}
                 >
-                  Topics
+                  Home
                 </NavLink>
+              </li>
+              <li className="font-medium	text-gray-600  hover:text-indigo-700">
+                <NavLink to="/topics">Topics</NavLink>
               </li>
               <li className="font-medium	text-gray-600  hover:text-indigo-700">
                 <NavLink to="/statistics">Statistics</NavLink>
