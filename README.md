@@ -1,6 +1,6 @@
 # Quiziest
 
-A Programming quiz site, where you can test your JavaScript, React, CSS, and Git skills.
+A Programming quiz site, where you can test your JavaScript, React, CSS, and Git skills by answering different questions.
 
 ## Live Link
 
